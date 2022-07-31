@@ -1,0 +1,131 @@
+body {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1%;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.backgroundBody {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1%;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: red;
+}
+
+.container {
+    height: 800px;
+    width: 1000px;
+    justify-self: center;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.containerPostEvent {
+    height: 145vh;
+    width: 1000px;
+    justify-self: center;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.title {
+    grid-area: input;
+    height: 200px;
+    width: 1000px;
+    padding-top: 3%;
+}
+
+.text {
+    grid-area: input;
+    height: 60px;
+    width: 1000px;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+}
+
+hr {
+    width: 900px;
+    border: rgb(0, 124, 155) solid 1px;
+}
+
+.box {
+    height: 500px;
+    width: 500px;
+    margin-top: 20px;
+    margin-left: 240px;
+    border-radius: 10px;
+    background-color: rgb(144, 151, 149);
+        /*Distribución y posicionamiento*/
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+.box h2 {
+    font-size: 50px;
+    color: white;
+    padding: 20px;
+    border: 0px;
+    margin: 0%;
+}
+
+.input #newAmount {
+    width: 300px;
+    height: 55px;
+    border-radius: 10px;
+    font-size: 25px;
+    text-align: center;
+    color: #767e81;
+    
+}
+
+.box h3 {
+    font-size: 25px;
+    color: white;
+    padding: 20px;
+    border: 0px;
+    margin: 0%;
+}
+
+
+.list #currency {
+    width: 300px;
+    height: 55px;
+    border-radius: 10px;
+    font-size: 25px;
+    text-align: center;
+    color: #767e81;
+    
+}
+
+select #chosenCurrencyOption {
+    color: black !important;
+}
+
+select {
+    color: rgb(188, 188, 204);
+}
+
+.button #btnConversion {
+    width: 300px;
+    height: 55px;
+    border-radius: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    color: white;
+    border-color: black;
+    background-color:  #0cccf4;
+}
+
+#displayMessage {
+    text-align: center;
+}
+
+.chartArea {
+    padding-top: 100px;
+}

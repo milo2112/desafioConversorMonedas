@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <title>Conversor</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="background">
+
+    <div class="container">
+        <div class="title">
+            <hr>
+            <strong>
+                <h1 class="text">Conversor de Monedas Nacional</h1>
+            </strong>
+            <hr>
+        </div>
+
+        <div class="box">
+            <strong><h2>Pesos CLP</h2></strong>
+
+            <div class="input">
+                <input id="newAmount" placeholder="Ingrese el monto en CLP" type="number"  pattern="[0-9]+" onkeypress="return validateKey(event);"/>
+            </div>
+          
+            
+            <label for="selectedCurrency"><strong><h3>Moneda a convertir:</h3></strong></label>
+
+            <div class="list">
+                <select name="selectedCurrency" id="currency">
+                    <!-- <option>desde html Seleccione moneda</option> -->
+                </select>
+            </div>
+            <div class="button" style="padding-top: 25px;">
+                <button id="btnConversion"><strong>Buscar</strong></button>
+            </div>
+            <div class="message" style="padding-top: 10px;">
+                <strong><h3 id="displayMessage">...</h3></strong>
+            </div>
+        </div>
+
+        <div class="chartArea">
+            <canvas id="myChart"></canvas>
+        </div>
+
+   
+    </div> 
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+
+</html>
